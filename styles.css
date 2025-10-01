@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box; 
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden; 
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 10px; 
+}
+
+/* telas de celular*/
+@media (max-width: 576px) {
+  .logo {
+    max-width: 150px; 
+  }
+  .search-box {
+    max-width: 100%; 
+  }
+  .buttons {
+    flex-direction: column; 
+  }
+
+  .buttons .btn {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+/* telas de tablet ou de pc  */
+@media (min-width: 768px) {
+  footer {
+    text-align: left; 
+    padding: 15px 30px;
+  }
+}
